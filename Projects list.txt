@@ -1,0 +1,73 @@
+🟢 Beginner Projects (No APIs or very basic)
+To-Do List App
+
+Add, delete, and mark tasks as complete.
+
+Store tasks in localStorage.
+
+Digital Clock
+
+Show current time updating every second.
+
+Quote Generator
+
+Show a random quote from a pre-defined list.
+
+Countdown Timer
+
+Countdown to a future date/time.
+
+Tip Calculator
+
+Calculate tip based on user input for bill amount and percentage.
+
+🟡 Intermediate Projects (Using APIs + async/await)
+Weather App
+
+Fetch weather data using the OpenWeatherMap API.
+
+Use async/await and try...catch.
+
+Random Joke App
+
+Fetch jokes from an API like https://official-joke-api.appspot.com/random_joke.
+
+GitHub Profile Finder
+
+Input a username and fetch user data (avatar, followers, repos) from GitHub API.
+
+Currency Converter
+
+Use an exchange rate API to convert between currencies.
+
+Advice Generator
+
+Use the Advice Slip API to fetch and show random advice.
+
+🔵 Advanced Mini Projects (Combine multiple concepts)
+Movie Search App
+
+Use the OMDb API to search and show movie details.
+
+Add a "favorite" feature using localStorage.
+
+News App
+
+Use the News API to fetch top headlines.
+
+Include filtering by category (sports, business, tech, etc).
+
+Weather Dashboard
+
+Add city search + show 5-day forecast using OpenWeatherMap.
+
+Use Promise.all() to get current + forecast data in parallel.
+
+Quiz App
+
+Create a quiz using either your own questions or from Open Trivia DB API.
+
+Image Gallery
+
+Use the Unsplash API to search and display images.
+

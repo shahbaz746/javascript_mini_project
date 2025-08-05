@@ -1,38 +1,56 @@
 let task = document.getElementById("input");
-let list = document.getElementsByClassName("show");
 let showTask = document.querySelector(".show");
-function addTask(){
-    // let taskText = task.value.trim();
-    if (task === "") {
+
+function addTask() {
+    if (task.value.trim() === "") {
         alert("Please enter a task.");
         return;
     }
-    else{
+
     let li = document.createElement("li");
-    li.innerHTML = task.value;
-    document.getElementsByClassName("show")[0].appendChild(li);
-    setData();
-    getData();
-    }
+    li.textContent = task.value;
+
     let deleteBtn = document.createElement("button");
-    deleteBtn.innerHTML = "Delete";
+    deleteBtn.textContent = "❌";
     deleteBtn.classList.add("delete-btn");
-    document.getElementsByClassName("show")[0].appendChild(deleteBtn);
-    deleteBtn.addEventListener("click", function() {
-        deleteBtn.parentElement.remove();
+    deleteBtn.onclick = function () {
+        li.remove();
         setData();
-        getData();
-    });
+    };
+
+    li.appendChild(deleteBtn);
+    showTask.appendChild(li);
+
+    setData();
     task.value = "";
 }
 
 function setData() {
-    let taskValue = document.getElementById("input").value;
-    localStorage.setItem("task", taskValue);
+    let tasks = [];
+    document.querySelectorAll(".show li").forEach((li) => {
+        // Remove the delete button text from stored task
+        tasks.push(li.firstChild.textContent.trim());
+    });
+    localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-console.log(setData)
 
 function getData() {
-    let taskValue = localStorage.getItem("task");
+    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    tasks.forEach((taskText) => {
+        let li = document.createElement("li");
+        li.textContent = taskText;
+
+        let deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "❌";
+        deleteBtn.classList.add("delete-btn");
+        deleteBtn.onclick = function () {
+            li.remove();
+            setData();
+        };
+
+        li.appendChild(deleteBtn);
+        showTask.appendChild(li);
+    });
 }
-console.log(getData)
+
+window.onload = getData;
