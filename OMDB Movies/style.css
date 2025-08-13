@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f54242;
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    height: 58px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+ul li {
+    color: white;
+    cursor: pointer;
+    margin-top: 7px;
+}
+ul li:hover {
+    text-decoration: underline;
+}
+input[type="text"] {
+    padding: 5px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 200px;
+}
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #259c57;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+.carousel-inner{
+    margin-top: 10px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.card img{
+    height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.li{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.ti{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+} 
