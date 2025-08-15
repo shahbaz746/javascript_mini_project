@@ -23,9 +23,17 @@
       </ul>
       <div>
         <input type="text" id="search" placeholder="Search for movies..." />
-        <button onclick="search()">Search</button>
+        <button onclick="handleSearch()">Search</button>
       </div>
     </div>
+
+      <!-- Spiner section -->
+     <div id="spinner" style="display: none; text-align: center; margin-top: 20px;">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
     <!-- Main Content Section -->
     <div class="container">
       <div
@@ -313,6 +321,11 @@
         </ul>
       </div>
     </footer>
+
+  
+
+
+<!-- The End -->
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
