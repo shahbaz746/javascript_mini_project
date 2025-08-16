@@ -1,17 +1,12 @@
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scrollbar-width: none;
+  margin: 0;
 }
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f54242;
-}
+
 .navbar {
   background-color: #333;
   color: white;
-  height: 58px;
+  height: 45px;
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -40,6 +35,7 @@ input[type="text"] {
   margin-bottom: 15px;
   border-radius: 5px;
   width: 200px;
+  margin-top: 10px;
 }
 button {
   padding: 5px 10px;
@@ -48,31 +44,26 @@ button {
   color: white;
   background: #259c57;
   cursor: pointer;
+  margin-top: 10px;
 }
 button:hover {
   background-color: #218838;
 }
-.carousel-inner {
-  margin-top: 10px;
-  width: 100%;
+a {
+  color: white;
+  text-decoration: none;
 }
-.carousel-inner img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
-.card img {
-  height: 200px;
-  object-fit: cover;
-  margin-top: 20px;
+.cu {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
+
 
 footer {
   background-color: #333;
@@ -98,42 +89,4 @@ footer {
   text-decoration: none;
   font-weight: bold;
   font-size: 30px;
-}
-.container {
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-}
-.row {
-  width: 100%;
-}
-
-/*  Additional styles for contact and about pages */
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.movie-card {
-  width: 200px;
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background: #fff;
-}
-
-.movie-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.result {
-  width: 200px;
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background: #fff;
 }
